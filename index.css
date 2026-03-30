@@ -288,7 +288,7 @@ header.scrolled .logo img {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-size: clamp(1.8rem, 8vw, 4.5rem); /* Reduced minimum for 360px */
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -427,6 +427,22 @@ section {
   
   .benefit-card {
     flex: none;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    display: flex;
+    flex-direction: column;
+    overflow-x: visible;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  
+  .benefit-card {
+    flex: 1 1 100%;
+    width: 100%;
     padding: 2.5rem 1.5rem;
   }
 }
@@ -928,7 +944,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--accent-gold);
-    white-space: nowrap;
+    white-space: normal; /* Permite que el texto largo se ajuste en móvil */
 }
 
 .category-line {
