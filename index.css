@@ -44,6 +44,12 @@ h1, h2, h3, h4 {
   padding: 0 2rem;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+}
+
 .text-center { text-align: center; }
 .bg-cream { background-color: var(--bg-cream); }
 
@@ -81,6 +87,18 @@ h1, h2, h3, h4 {
 .btn-outline:hover {
   background: var(--accent-gold);
   color: white;
+}
+
+.btn-primary {
+  background-color: var(--primary-olive);
+  color: white;
+  box-shadow: 0 4px 12px rgba(130, 147, 115, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-olive-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(130, 147, 115, 0.3);
 }
 
 .btn-whatsapp {
@@ -137,6 +155,11 @@ nav {
 
 header.scrolled .logo img {
   height: 81px;
+}
+
+@media (max-width: 768px) {
+  .logo img { height: 75px; }
+  header.scrolled .logo img { height: 60px; }
 }
 
 .nav-links {
@@ -265,19 +288,19 @@ header.scrolled .logo img {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(2rem, 8vw, 4.5rem);
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0 1rem;
 }
 
 .hero p {
-  font-size: clamp(0.9rem, 2.2vw, 1.5rem);
-  max-width: fit-content;
-  white-space: nowrap;
-  width: 100%;
+  font-size: clamp(0.95rem, 2.2vw, 1.4rem);
+  max-width: 700px;
   margin: 0 auto 2.5rem;
   font-weight: 300;
+  padding: 0 1rem;
 }
 
 .hero-btns {
@@ -640,7 +663,20 @@ footer {
 
   .nav-links li:last-child {
     border-bottom: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Specific fix for the Agendar button link in the mobile nav */
+  .nav-links li a.btn {
+    padding: 0;
+    width: 100%;
+    border-radius: 12px;
+    background: rgba(130, 147, 115, 0.05); /* Subtle background for the whole item */
+  }
+
+  .nav-links li a.btn .nav-link-content {
+    justify-content: flex-start;
+    padding: 15px 0; /* Match the indentation of other links */
   }
 
   .nav-links .btn {
@@ -717,8 +753,9 @@ footer {
   }
   
   .hero-btns {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 1rem;
+    padding: 0 2rem;
   }
 
   .btn {
@@ -742,7 +779,7 @@ footer {
   }
 
   .cta-section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
