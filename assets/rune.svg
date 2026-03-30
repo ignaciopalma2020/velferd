@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Outer Frame -->
+  <circle cx="100" cy="100" r="85" stroke="#D4AF37" stroke-width="4" fill="#FDFBF7" />
+  <circle cx="100" cy="100" r="75" stroke="#8A9A5B" stroke-width="2" />
+  
+  <!-- Runes Circle Simulation -->
+  <text font-family="Segoe UI Symbol, Code2000, sans-serif" font-size="12" fill="#5D4037">
+    <textPath xlink:href="#circlePath" startOffset="0%">
+      ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚻ ᚼ ᚽ ᚾ ᚿ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᛠ ᛡ
+    </textPath>
+  </text>
+  <defs>
+    <path id="circlePath" d="M 100, 100 m -65, 0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0" />
+  </defs>
+
+  <!-- Central Symbol (Stylized Rune/Leaf) -->
+  <circle cx="100" cy="100" r="45" fill="#4B633C" />
+  <path d="M100 70 L100 130 M100 70 L125 100 L100 100" stroke="#D4AF37" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M125 100 L115 110" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
+</svg>

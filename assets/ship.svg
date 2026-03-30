@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Oseberg Style Longship Minimalist -->
+  <path d="M5,65 C15,90 85,90 95,65" fill="none" stroke="var(--accent-gold)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Prow (Proa esculpida) -->
+  <path d="M5,65 C-2,45 8,25 18,30 C22,33 15,40 12,45" fill="none" stroke="var(--accent-gold)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stern (Popa) -->
+  <path d="M95,65 C100,50 90,45 92,35" fill="none" stroke="var(--accent-gold)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Mast & Sail -->
+  <line x1="50" y1="80" x2="50" y2="25" stroke="var(--accent-gold)" stroke-width="2"/>
+  <path d="M30,35 Q50,15 70,35 L70,60 Q50,75 30,60 Z" fill="rgba(212, 175, 55, 0.2)" stroke="var(--accent-gold)" stroke-width="1.5"/>
+</svg>
